@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +22,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'primary-color':'#FFDC26'
               }
             }
           }
@@ -39,7 +40,61 @@
       </style>
 </head>
 <body class="font-ADlam">
-    <header></header>
+    <header class="max-w-screen-2xl mx-auto">
+        <!--navbar-->
+        <nav class="font-sora px-3 lg:px-32 bg-[#FFF9F4]">
+            <div class="navbar">
+                <div class="navbar-start">
+                  <img class="" src="./c1-assets/logo-header.png" >
+                  <a class="btn-ghost text-2xl hidden lg:flex ml-2 ">Browse <span class="text-[#FFDC26]">4</span>Pets</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-xl">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact Us</a></li>
+                    
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="hidden lg:flex items-center">
+                        <i class="fa-regular fa-bell text-2xl mr-4"></i>
+                        <i class="fa-solid fa-magnifying-glass text-xl mr-4"></i>
+                        <input type="submit" value="Log in" class="border border-primary-color rounded-lg text-xl px-7 py-2 mr-3">
+                    
+                        <a class="btn bg-primary-color px-7">Register</a>
+                    </div>
+
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg">
+                          <li><a>Find a pet</a></li>
+                          <li><a>Breeds</a></li>
+                          <li><a>Contact Us</a></li>
+                        </ul>
+                      </div>
+                </div>
+              </div>
+        </nav>
+
+        <!--banner section-->
+        
+    </header>
 
     <main></main>
 
